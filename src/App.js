@@ -6,7 +6,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
+        <div className="container">
+          <header>
             <div className="logo">
               <svg viewBox="-3 -3 114 63">
                 <g id="Page-1" stroke="none" strokeWidth="10" fill="none" fillRule="evenodd">
@@ -15,13 +16,17 @@ class App extends Component {
               </svg>
               <span>Matthew Burfield</span>
             </div>
-        </header>
-        <section>
-          Middle section
-        </section>
-        <section>
+            <div className="buttons">
+              <button name="btn1">Button 1</button>
+              <button name="btn2">Button 2</button>
+            </div>
+          </header>
+          <section className="content">
+            <h1>Enthusiastic Frontend Developer.</h1>
+            <h2>I build cool shit.</h2>
+          </section>
           <Icons />
-        </section>
+        </div>
       </div>
     );
   }

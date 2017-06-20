@@ -14,6 +14,13 @@
   align-items: center;
 }
 
+.footer h3 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .tech-icon {
   height: 50px;
   width: 50px;
@@ -27,4 +34,13 @@
 .tech-icon svg:hover {
   filter: grayscale(0%);
   transform: scale(1.1, 1.1);
+}
+
+.tech-icon span {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tech-icon svg:hover + span {
+  opacity: 1;
 }
