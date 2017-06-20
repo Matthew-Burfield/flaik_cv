@@ -1,0 +1,49 @@
+header {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex: 0.17;
+  min-width: 190px;
+}
+
+header .logo svg {
+  width: auto;
+  height: 30px;
+}
+
+header .logo path {
+  stroke-width: 6;
+  stroke: #EC2A25;
+}
+
+header .buttons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+header .buttons button {
+  margin: 0 10px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: '1px solid rgba(255, 255, 255, .3)';
+  width: 160px;
+  height: 45px;
+  border-radius: 22.5px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+header .buttons button:hover {
+  background-color: #EF4230;
+  box-shadow: 0 10px 10px #1C232B;
+}
