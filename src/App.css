@@ -1,24 +1,31 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('http://www.flaik.com/sites/default/themes/flaik_guest/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Circular,'Helvetica Neue',helvetica,arial,sans-serif;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+header {
+  padding: 60px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.logo {
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+header .logo svg {
+  width: auto;
+  height: 100%;
+  flex: 0.1;
+}
+
+header .logo path {
+  stroke: #EC2A25;
+  stroke-width: 6;
 }
