@@ -1,14 +1,17 @@
 .App {
+  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+}
+
+.page1 {
   height: 100vh;
   width: 100vw;
   background-image: url('http://www.flaik.com/sites/default/themes/flaik_guest/img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
   color: white;
 }
 
-.App .container {
+.page1 .container {
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -24,8 +27,9 @@ header {
 header .logo {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
-  flex: 1;
+  justify-content: space-between;
+  flex: 0.17;
+  min-width: 190px;
 }
 
 header .logo svg {
@@ -73,10 +77,18 @@ section.content {
 section.content h1 {
   font-size: 60px;
   letter-spacing: 2px;
+  margin-bottom: 0px;
 }
 
 section.content h2 {
   font-size: 40px;
   letter-spacing: 2px;
   font-weight: 300;
+  margin-top: 0px;
+}
+
+.page2 {
+  height: 100vh;
+  width: 100vw;
+  color: #000;
 }
