@@ -1,0 +1,251 @@
+.App {
+  font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('http://www.flaik.com/sites/default/themes/flaik_guest/img/bg.jpg');
+  background-color: #1C232B;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.page1 .container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.page2 .container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.page1 section.content {
+  width: 90%;
+  margin: auto;
+}
+
+.page2 .content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section.content h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+section.content h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.page2 {
+  height: 100vh;
+  width: 100vw;
+  color: #000;
+}
+
+.experience .category-title {
+    color: #264e59
+}
+
+.experience .item {
+    border-color: #1C232B
+}
+
+.experience .target-border {
+    background: #1C232B
+}
+
+.experience .target-dot {
+    background: #1C232B
+}
+
+.experience a {
+    color: #1C232B;
+    background-color: rgba(38,78,89,0.1);
+    box-shadow: 5px 0 0 rgba(38,78,89,0.1),-5px 0 0 rgba(38,78,89,0.1)
+}
+
+.experience a:hover {
+    background-color: rgba(38,78,89,0.2);
+    box-shadow: 5px 0 0 rgba(38,78,89,0.2),-5px 0 0 rgba(38,78,89,0.2)
+}
+
+ul li {
+    list-style-type: disc;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+    color: #1C232B;
+}
+
+.item {
+    border-left: 5px solid;
+    padding-left: 50px;
+    padding-bottom: 2em;
+    position: relative
+}
+
+.item:nth-child(2) {
+    margin-top: 30px
+}
+
+.item:last-child {
+    padding-bottom: 0
+}
+
+@media (max-width: 415px) {
+    .item {
+        border:none;
+        padding-left: 0
+    }
+}
+
+.target-border {
+    position: absolute;
+    left: -38px;
+    top: -15px;
+    width: 40px;
+    height: 40px;
+    border: 15px solid white;
+    border-radius: 50%;
+    z-index: 1
+}
+
+@media (max-width: 415px) {
+    .target-border {
+        display:none
+    }
+}
+
+.target-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 10;
+    margin: 5px auto;
+    border: 10px solid white
+}
+
+.item-company-title {
+    display: inline-block;
+    margin-top: 0
+}
+
+@media (max-width: 1150px) {
+    .item-company-title {
+        margin-bottom:5px
+    }
+}
+
+.item-date {
+    position:relative;
+    right: auto;
+    top: auto;
+    text-align: left;
+    margin-bottom: 0.2em;
+    color: #888;
+    font-size: 0.8em;
+    min-width: 180px;
+}
+
+.item-personal-title {
+    margin-left: 15px;
+    color: #888
+}
+
+@media (max-width: 1150px) {
+    .item-personal-title {
+        margin-left:0 !important;
+        margin-bottom: 0.2em !important;
+        display: block
+    }
+}
+
+.item-key-tech {
+    color: #888;
+    font-size: 0.8em
+}
+
+.titles.wrap .item-company-title {
+    margin-bottom: 0
+}
+
+.titles.wrap .item-personal-title {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 15px
+}
+
+.item-personal-details {
+    margin-top: 0;
+    padding-left: 1em
+}
+
+.community .category-title {
+    color: #21b080
+}
+
+.community .item {
+    border-color: #21b080
+}
+
+.community .target-border {
+    background: #21b080
+}
+
+.community .target-dot {
+    background: #21b080
+}
+
+.community a {
+    color: #21b080;
+    background-color: rgba(33,176,128,0.1);
+    box-shadow: 5px 0 0 rgba(33,176,128,0.1),-5px 0 0 rgba(33,176,128,0.1)
+}
+
+.community a:hover {
+    background-color: rgba(33,176,128,0.2);
+    box-shadow: 5px 0 0 rgba(33,176,128,0.2),-5px 0 0 rgba(33,176,128,0.2)
+}
+
+.education .category-title {
+    color: #500e4e
+}
+
+.education .item {
+    border-color: #500e4e
+}
+
+.education .target-border {
+    background: #500e4e
+}
+
+.education .target-dot {
+    background: #500e4e
+}
+
+.education a {
+    color: #500e4e;
+    background-color: rgba(80,14,78,0.1);
+    box-shadow: 5px 0 0 rgba(80,14,78,0.1),-5px 0 0 rgba(80,14,78,0.1)
+}
+
+.education a:hover {
+    background-color: rgba(80,14,78,0.2);
+    box-shadow: 5px 0 0 rgba(80,14,78,0.2),-5px 0 0 rgba(80,14,78,0.2)
+}
+
+.education p {
+    margin: 0
+}
