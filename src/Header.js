@@ -1,16 +1,27 @@
 import React from 'react'
 import './Header.css'
 
-export const Header = ({fontColor, borderColor, strokeColor}) => {
+export const Header = (props) => {
+  const {fontColor, borderColor} = props
   const buttonStyle = {
     borderColor: borderColor,
     borderWidth: 1,
     borderStyle: 'solid',
-    color: fontColor,
+    color: fontColor
   }
   const logoStyle = {
-    color: fontColor,
+    color: fontColor
   }
+  const sidebarContent = (
+    <div style={{height: '100vh', width: '70vw', backgroundColor: '#fff'}}>
+      Hey Fam!
+    </div>
+  )
+  const sidebarTwoContent = (
+    <div style={{height: '100vh', width: '70vw', backgroundColor: '#fff'}}>
+      Now we're talking!
+    </div>
+  )
   return (
     <header>
       <div className="logo" style={logoStyle}>
@@ -22,8 +33,16 @@ export const Header = ({fontColor, borderColor, strokeColor}) => {
         <span>Matthew Burfield</span>
       </div>
       <div className="buttons">
-        <button name="btn1" style={buttonStyle}>Button 1</button>
-        <button name="btn2" style={buttonStyle}>Button 2</button>
+        <button
+          name="btn1"
+          onClick={() => props.onSetSidebarOpen(true, sidebarContent)}
+          style={buttonStyle}>Button 1
+        </button>
+        <button
+          name="btn2"
+          onClick={() => props.onSetSidebarOpen(true, sidebarTwoContent)}
+          style={buttonStyle}>Button 2
+        </button>
       </div>
     </header>
   )

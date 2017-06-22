@@ -4970,6 +4970,10 @@ react-scripts@1.0.7:
   optionalDependencies:
     fsevents "1.0.17"
 
+react-sidebar@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/react-sidebar/-/react-sidebar-2.3.2.tgz#ec140bea8a6f5fa3d8ea7a56479665b44cf4f9cf"
+
 react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
