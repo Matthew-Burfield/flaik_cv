@@ -46,7 +46,11 @@ export class MainPage extends Component {
           </div>
           <div className="page2">
             <div className="container">
-              <Header fontColor='#1C232B' borderColor='#1C232B' />
+              <Header
+                fontColor='#1C232B'
+                borderColor='#1C232B'
+                onSetSidebarOpen={this.onSetSidebarOpen}
+              />
               <div className="content">
                 <section className="category experience">
                   <h2 className="category-title">Experience</h2>
