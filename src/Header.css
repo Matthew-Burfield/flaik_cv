@@ -2,6 +2,9 @@ header {
   padding: 40px 60px;
   display: flex;
   justify-content: space-between;
+  top: 0px;
+  position: fixed;
+  width: 90%;
 }
 
 header .logo {
@@ -27,6 +30,12 @@ header .buttons {
   align-items: flex-start;
   justify-content: flex-end;
   flex: 1;
+}
+
+@media (max-width: 800px) {
+  header .buttons {
+    display: none;
+  }
 }
 
 header .buttons button {

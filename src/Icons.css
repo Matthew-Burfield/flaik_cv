@@ -1,3 +1,9 @@
+@media (max-width: 800px) {
+  section.footer {
+    display: none;
+  }
+}
+
 .footer h3 {
   font-weight: 200;
   text-transform: uppercase;

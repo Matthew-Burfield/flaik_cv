@@ -32,8 +32,14 @@
 }
 
 .page2 .content {
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+	.page2 .content {
+		width: 90%;
+	}
 }
 
 section.content h1 {
@@ -248,4 +254,27 @@ ul li {
 
 .education p {
     margin: 0
+}
+
+.coder-dojo-container {
+    display: flex;
+}
+
+.coder-dojo-image {
+    width: 100%;
+    height: auto;
+}
+
+#left-ninja, #right-ninja {
+    position: relative;
+    transition: opacity 1s, transform 1s;
+    opacity: 1;
+}
+
+#right-ninja {
+    transform: translateY(160px) translateX(-100px);
+}
+
+#left-ninja {
+    transform: translateY(160px) translateX(1000px);
 }

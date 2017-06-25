@@ -1,0 +1,25 @@
+@media (min-width: 799px) {
+  section.IconsPage {
+    display: none;
+  }
+}
+
+section.IconsPage {
+  align-content: center;
+  width: 90%;
+  margin-top: 100px;
+  letter-spacing: 2px;
+}
+
+.IconsPage .icon-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IconsPage .icon-container .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

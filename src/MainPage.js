@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Sidebar from 'react-sidebar'
 import { Icons } from './Icons'
+import { IconsPage } from './IconsPage'
 import { Header } from './Header'
+import { CoderDojo } from './images/CoderDojo'
 import './MainPage.css'
 
 export class MainPage extends Component {
@@ -44,13 +46,9 @@ export class MainPage extends Component {
               <Icons />
             </div>
           </div>
+          <IconsPage />
           <div className="page2">
             <div className="container">
-              <Header
-                fontColor='#1C232B'
-                borderColor='#1C232B'
-                onSetSidebarOpen={this.onSetSidebarOpen}
-              />
               <div className="content">
                 <section className="category experience">
                   <h2 className="category-title">Experience</h2>
@@ -170,11 +168,14 @@ export class MainPage extends Component {
                       <span className="item-personal-title">Mentor</span>
                     </div>
                     <div className="item-date">May 2017 - Current</div>
-                    <ul className="item-personal-details">
-                      <li>Coder Dojo is a friendly environment for kids to learn how to code, lead by volunteers</li>
-                      <li>I started attending Coder Dojo as a mentor last month, and really enjoy teaching kids how to code</li>
-                      <li>I'll teach whatever the individual child wants to learn, which so far has been scratch, python and JavaScript</li>
-                    </ul>
+                    <div className="coder-dojo-container">
+                      <ul className="item-personal-details">
+                        <li>Coder Dojo is a friendly environment for kids to learn how to code, lead by volunteers</li>
+                        <li>I started attending Coder Dojo as a mentor last month, and really enjoy teaching kids how to code</li>
+                        <li>I'll teach whatever the individual child wants to learn, which so far has been scratch, python and JavaScript</li>
+                      </ul>
+                    </div>
+                    <CoderDojo className="coder-dojo-image" />
                   </div>
                   <div className="item">
                     <div className="target-border">
@@ -216,7 +217,7 @@ export class MainPage extends Component {
                     <ul className="item-personal-details">
                       <li>Elected by my peers as one of only two participants to represent the Asia Pacific region on the council</li>
                       <li>Presented Leadership talk in front of an audience of 100, including HRH Prince Edward, Earl of Wessex and received amazingly positive feedback.</li>
-                      <li>Was MC for Asia Pacific regional dinner in Hong Kong, hosting ...</li>
+                      <li>Was MC for Asia Pacific regional dinner in Hong Kong.</li>
                     </ul>
                   </div>
                   <div className="page-break"></div>

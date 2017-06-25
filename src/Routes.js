@@ -11,7 +11,7 @@ const tempComponent = () => (
 
 export const Routes = () => (
   <Router>
-    <div class='app'>
+    <div className='app'>
       <Route exact path='/' component={MainPage} />
       <Route path='/buttonone' component={tempComponent} />
     </div>
