@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Routes } from './Routes'
+import { MainPage } from './MainPage'
 import registerServiceWorker from './registerServiceWorker'
 import './index.css'
 
-ReactDOM.render(<Routes />, document.getElementById('root'))
+ReactDOM.render(<MainPage />, document.getElementById('root'))
 registerServiceWorker()
