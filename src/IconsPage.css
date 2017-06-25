@@ -5,21 +5,28 @@
 }
 
 section.IconsPage {
-  align-content: center;
   width: 90%;
   margin-top: 100px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .IconsPage .icon-container {
-  margin-top: 100px;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .IconsPage .icon-container .col {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 50px 0;
+}
+
+@media (max-width: 449px) {
+  .IconsPage .icon-container .col {
+    padding: 20px 0;
+  }
 }

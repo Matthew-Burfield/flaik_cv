@@ -3,7 +3,7 @@ import Sidebar from 'react-sidebar'
 import { Icons } from './Icons'
 import { IconsPage } from './IconsPage'
 import { Header } from './Header'
-import { CoderDojo } from './images/CoderDojo'
+// import { CoderDojo } from './images/CoderDojo'
 import './MainPage.css'
 
 export class MainPage extends Component {
@@ -11,7 +11,7 @@ export class MainPage extends Component {
     super(props)
     this.state = {
       sidebarOpen: false,
-      sidebarContent: null
+      sidebarContent: <div></div>
     }
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this)
   }
@@ -31,7 +31,7 @@ export class MainPage extends Component {
         onSetOpen={this.onSetSidebarOpen}
         pullRight
       >
-        <div className="App">
+        <div className="App" onScroll={e => console.log(e)}>
           <div className="page1">
             <div className="container">
               <Header
@@ -175,7 +175,6 @@ export class MainPage extends Component {
                         <li>I'll teach whatever the individual child wants to learn, which so far has been scratch, python and JavaScript</li>
                       </ul>
                     </div>
-                    <CoderDojo className="coder-dojo-image" />
                   </div>
                   <div className="item">
                     <div className="target-border">
