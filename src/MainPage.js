@@ -14,7 +14,14 @@ export class MainPage extends Component {
       sidebarContent: <div></div>
     }
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this)
+    // this.paneDidMount = this.paneDidMount.bind(this)
   }
+
+  // paneDidMount (node) {
+  //   if (node) {
+  //     node.addEventListener('scroll', () => console.log('scroll!'))
+  //   }
+  // }
 
   onSetSidebarOpen (sidebarOpen, sidebarContent) {
     this.setState({
@@ -31,7 +38,7 @@ export class MainPage extends Component {
         onSetOpen={this.onSetSidebarOpen}
         pullRight
       >
-        <div className="App" onScroll={e => console.log(e)}>
+        <div className="App">
           <div className="page1">
             <div className="container">
               <Header

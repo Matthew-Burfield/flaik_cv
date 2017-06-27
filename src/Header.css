@@ -2,9 +2,10 @@ header {
   padding: 40px 60px;
   display: flex;
   justify-content: space-between;
-  top: 0px;
-  position: fixed;
+  /*top: 0px;*/
+  /*position: fixed;*/
   width: 90%;
+  align-items: center;
 }
 
 header .logo {

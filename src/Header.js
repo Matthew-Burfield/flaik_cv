@@ -33,7 +33,7 @@ export const Header = (props) => {
         <span>Matthew Burfield</span>
       </div>
       <div className="buttons">
-        <button
+        {/*<button
           name="btn1"
           onClick={() => props.onSetSidebarOpen(true, sidebarContent)}
           style={buttonStyle}>Button 1
@@ -42,7 +42,7 @@ export const Header = (props) => {
           name="btn2"
           onClick={() => props.onSetSidebarOpen(true, sidebarTwoContent)}
           style={buttonStyle}>Button 2
-        </button>
+        </button>*/}
       </div>
     </header>
   )
