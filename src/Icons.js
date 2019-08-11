@@ -11,6 +11,8 @@ import {
   webpackLogo,
   babelLogo
 } from './icons/index'
+import { Icon, InlineIcon } from '@iconify/react';
+import jestIcon from '@iconify/icons-logos/jest';
 
 export const Icons = (props) => (
   <section className="footer">
@@ -27,6 +29,10 @@ export const Icons = (props) => (
       <div className="tech-icon html">
         {htmlLogo}
         <span>HTML5</span>
+      </div>
+      <div className="tech-icon jest">
+        <Icon icon={jestIcon} />
+        <span>Jest</span>
       </div>
       <div className="tech-icon javascript">
         {javascriptLogo}

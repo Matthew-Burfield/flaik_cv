@@ -3,6 +3,7 @@ import Sidebar from 'react-sidebar'
 import { Icons } from './Icons'
 import { IconsPage } from './IconsPage'
 import { Header } from './Header'
+import Item from './Item';
 // import { CoderDojo } from './images/CoderDojo'
 import './MainPage.css'
 
@@ -59,58 +60,56 @@ export class MainPage extends Component {
               <div className="content">
                 <section className="category experience">
                   <h2 className="category-title">Experience</h2>
+                  <Item
+                    companyTitle='flaik'
+                    jobTitle='React Frontend Developer'
+                    date='Jul 2017 - current'
+                    techStack='JavaScript (ES6), React, Redux, Flow, ImmutableJS, '
+                    jobDetails={[
+                      'Small dynamic cross functional teams meant I was highly involved in decision making processes, dev checkins and working closely with designers.',
+                      'Championed for implementing an automated testing suite using Jest and Cypress.io.',
+                    ]}
+                  />
+                  <Item
+                    companyTitle='Tanda Hackathon Winner'
+                    jobTitle='Full Stack Developer'
+                    date='Apr 19-22 2018'
+                    techStack='NodeJS, Javascript, Zapier, Chat bot, Tanda API'
+                    jobDetails={[
+                      'Built a Facebook chat bot that integrated with the Tanda API to provide useful data to their customers employees (shift workers).',
+                      'Presented the app infront of the crowd and judges receiving really positive feedback.',
+                    ]}
+                  />
+                  <Item
+                    companyTitle='Digital8'
+                    jobTitle='React Frontend Developer'
+                    date='Jun 2017 - Jul 2017'
+                    techStack='JavaScript (ES6), SASS, React, Redux'
+                    jobDetails={[
+                      'Was brought in to finish off a project that was under a tight deadline.',
+                      'Started with a single trial day to see if I could be productive from day one.',
+                      'Now working with the front end team to get this project over the line ASAP.',
+                    ]}
+                  />
                   <div className="item">
                     <div className="target-border">
                       <div className="target-dot"></div>
                     </div>
                     <div className="titles">
-                      <h3 className="item-company-title">Digital8</h3>
-                      <span className="item-personal-title">React Frontend Developer</span>
-                    </div>
-                    <div className="item-date">Jun 2017 - current</div>
-                    <p className="item-key-tech">
-                      JavaScript (ES6), SASS, React, Redux
-                    </p>
-                    <ul className="item-personal-details">
-                      <li>Was brought in to finish off a project that was under a tight deadline</li>
-                      <li>Started with a single trial day to see if I could be productive from day one</li>
-                      <li>Now working with the front end team to get this project over the line ASAP</li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <div className="target-border">
-                      <div className="target-dot"></div>
-                    </div>
-                    <div className="titles">
-                      <h3 className="item-company-title">Givebackathon - HUSTLER AWARD</h3>
+                      <h3 className="item-company-title">Givebackathon</h3>
                       <span className="item-personal-title">Developer</span>
                     </div>
                     <div className="item-date">May 20-21 2017</div>
                     <p className="item-key-tech">HTML, CSS, React, Powerpoint</p>
-                    <ul className="item-personal-details">
-                      <li>I built an app to help one of the charities (First Nation) fix the financial literacy problem within the aboriginal community in Australia.</li>
-                      <li>Our app even got featured on <a href="https://www.youtube.com/watch?v=2lnZB_1KfWE">NITV news</a></li>
-                      <li>We won an XBox for winning the best hustlers award</li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <div className="target-border">
-                      <div className="target-dot"></div>
+                    <div className="coder-dojo-container">
+                      <ul className="item-personal-details">
+                        <li>I built an app to help one of the charities (First Nation) fix the financial literacy problem within the aboriginal community in Australia.</li>
+                        <li>Our app even got featured on <a href="https://www.youtube.com/watch?v=2lnZB_1KfWE">NITV news</a>.</li>
+                        <li>We won an XBox for winning the best hustlers award.</li>
+                      </ul>
                     </div>
-                    <div className="titles">
-                      <h3 className="item-company-title">Magikhack - WINNER</h3>
-                      <span className="item-personal-title">Developer</span>
-                    </div>
-                    <div className="item-date">Apr 7-9 2017</div>
-                    <p className="item-key-tech">JavaScript</p>
-                    <ul className="item-personal-details">
-                      <li>Magikcraft teaches kids to code JavaScript in MineCraft through the metaphor of magic!</li>
-                      <li>During the hackathon we were given access to the Magikcraft API and were tasked with creating awesome spells within the Magikcraft game.</li>
-                      <li>I built a 3d printer that allowed players to spawn any objects they wanted in a 3d space.</li>
-                      <li>Got the overall first prize</li>
-                    </ul>
                   </div>
-                  <div className="item">
+                  {/* <div className="item">
                     <div className="target-border">
                       <div className="target-dot"></div>
                     </div>
@@ -119,23 +118,18 @@ export class MainPage extends Component {
                       <span className="item-personal-title">Nomad</span>
                     </div>
                     <div className="item-date">Nov 2015 - Nov 2016</div>
-                  </div>
-                  <div className="item">
-                    <div className="target-border">
-                      <div className="target-dot"></div>
-                    </div>
-                    <div className="titles">
-                      <h3 className="item-company-title">uniDap Solutions</h3>
-                      <span className="item-personal-title">Solutions Configurer</span>
-                    </div>
-                    <div className="item-date">Sep 2009 - Nov 2015</div>
-                    <p className="item-key-tech">MSSQL, VBScript, XML, XSLT, IIS6/7</p>
-                    <ul className="item-personal-details">
-                      <li>uniDap solutions is an information solutions company, that delivers enterprise level, workflow driven database applications to government, not-for-profit and enterprise sectors.</li>
-                      <li>My primary focus was configuring the web application for the Duke of Edinburgh’s award. An online web application that served over 300,000 users globally, allowing participants to manage their award data, as well as giving administrators reporting functionality.</li>
-                      <li>I was the first point of contact to develop new features, fix issues, and ensure the system kept operating smoothly.</li>
-                    </ul>
-                  </div>
+                  </div> */}
+                  <Item
+                    companyTitle='uniDap Solutions'
+                    jobTitle='Solutions Configurer'
+                    date='Sep 2009 - Nov 2015'
+                    techStack='MSSQL, VBScript, XML, XSLT, IIS6/7'
+                    jobDetails={[
+                      'uniDap solutions is an information solutions company, that delivers enterprise level, workflow driven database applications to government, not-for-profit and enterprise sectors.',
+                      'My primary focus was configuring the web application for the Duke of Edinburgh’s award. An online web application that served over 300,000 users globally, allowing participants to manage their award data, as well as giving administrators reporting functionality.',
+                      'I was the first point of contact to develop new features, fix issues, and ensure the system kept operating smoothly.',
+                    ]}
+                  />
                   <div className="page-break"></div>
                 </section>
 
