@@ -6,7 +6,7 @@
   "devDependencies": {
     "@iconify/icons-logos": "^1.0.1",
     "@iconify/react": "^1.1.1",
-    "eslint": "^4.0.0",
+    "eslint": "^4.18.2",
     "eslint-config-standard": "10.2.1",
     "eslint-plugin-promise": "3.5.0",
     "eslint-plugin-standard": "3.0.1",
